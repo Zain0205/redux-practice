@@ -16,6 +16,8 @@ const loginSlice = createSlice({
     },
     handleLogout(state) {
       state.isLogin = false;
+      localStorage.removeItem('role')
+      localStorage.removeItem('pass')
     },
   },
 });
