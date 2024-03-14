@@ -23,7 +23,7 @@ function Login() {
     setPassword("");
     setRole("");
 
-    if (!isLogin) {
+    if (!isLogin && localStorage.getItem('role')) {
       navigate('/home')
     }
   };
